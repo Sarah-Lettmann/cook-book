@@ -1,0 +1,36 @@
+blockquote {
+
+  p {
+
+    &::before {
+      content: open-quote;
+    }
+  
+    &::after {
+      content: close-quote;
+    }
+  }
+
+  footer {
+    font-style: italic;
+
+    &::before {
+      content: '-';
+    }
+  }
+}
+
+q {
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+cite {
+  font-style: italic;
+}

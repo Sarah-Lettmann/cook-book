@@ -1,0 +1,31 @@
+$border: 1px solid #000;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {}
+
+th {}
+
+td {}
+
+tbody {}
+
+thead {}
+
+tfoot {}
+
+// suggestion for mobile tables
+table,
+thead,
+tbody,
+tfoot,
+th,
+td,
+tr {
+  @include breakpoint(mobile) {
+    display: block;
+  }
+}
